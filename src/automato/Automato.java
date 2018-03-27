@@ -53,28 +53,16 @@ public class Automato {
         if (contador < cadeia.length) {
             if (cadeia[contador] == '1') {
                 contador++;
-                q3();
-            } else if (cadeia[contador] == '0') {
-                contador++;
                 q2();
-            }
-        }else{
-             qErro();
-        }
-    }
-    public void q3(){
-        if (contador < cadeia.length) {
-            if (cadeia[contador] == '0') {
-                contador++;
-                q3();
-            } else if (cadeia[contador] == '1') {
-                contador++;
-                q3();
+            } else if (cadeia[contador] == '0') {
+                contador++; 
+                q1();
             }
         }else{
              End();
         }
     }
+  
     public void End(){
         System.out.println("Cadeia aceita!");
        
