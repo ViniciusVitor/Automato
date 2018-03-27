@@ -1,3 +1,5 @@
+//Vinícius Vitor
+
 package automato;
 
 import java.util.Scanner;
